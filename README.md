@@ -1,3 +1,5 @@
 # My-Portfolio-Website
 
-Responsive single‑page developer portfolio built with semantic HTML, modern CSS (custom properties, gradients, glassy panels, dark theme), and vanilla JS for an accessible hamburger menu and intersection‑observer reveal animations. Showcases profile, skills, projects (with GIF previews/links), and contact, with adaptive layout down to small screens.
+Responsive single‑page portfolio built with semantic HTML, CSS, and vanilla JS. This is a frontend-only website showcasing my profile, projects and contact info. Webpage is hosted on university domain address.
+
+## Website link: https://www.cs.mun.ca/~sammama/
