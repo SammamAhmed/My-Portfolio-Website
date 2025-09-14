@@ -1,273 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sammam Ahmed | Portfolio</title>
-  <meta name="description" content="Portfolio of Sammam Ahmed - aspiring software developer focused on clean, performant, and user-centric interfaces."/>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="mediaqueries.css"/>
-  <link rel="icon" type="image/png" href="./assets/profile-pic.png"/>
-</head>
-<body>
-  <nav id="desktop-nav">
-    <div class="logo"><a href="#profile" aria-label="Home">Sammam Ahmed</a></div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <nav id="hamburger-nav">
-    <div class="logo">Sammam Ahmed</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Menu" role="button" tabindex="0">
-        <span></span><span></span><span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-
-  <section id="profile" class="hero-gradient">
-    <div class="aurora"></div>
-    <div class="section__pic-container reveal" data-delay="0">
-      <img src="./assets/profile-pic.png" alt="Portrait of Sammam Ahmed"/>
-    </div>
-    <div class="section__text reveal" data-delay="1000">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Sammam Ahmed</h1>
-      <p class="section__text__p2">Aspiring Software Developer</p>
-      <div class="btn-container">
-        <button
-          type="button"
-          class="btn btn-accent-outline"
-          onclick="window.open('./assets/Resume_Sammam Ahmed')">
-          Download CV
-        </button>
-        <button
-          type="button"
-          class="btn btn-accent-fill"
-          onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title section-title-accent">About Me</h1>
-    <div class="section-container">
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container card-gradient">
-            <h3>Experience</h3>
-            <p>2+ year<br/>Learning Software Development</p>
-          </div>
-          <div class="details-container card-gradient">
-            <h3>Education</h3>
-            <p>Bachelor of Science<br/>in Computer Science</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            I'm an aspiring software developer with a passion for clean UI, responsive design,
-            and performance-first builds. I enjoy turning complex problems into elegant,
-            accessible, and user-focused experiences. Always curious, always learning.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title section-title-accent">Skills</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container card-gradient">
-          <h2 class="experience-sub-title">Programming Languages</h2>
-          <ul class="article-container skills-list">
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>Python</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>Java</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>C</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>C++</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>JavaScript</li>
-          </ul>
-        </div>
-
-        <div class="details-container card-gradient">
-          <h2 class="experience-sub-title">Web Development</h2>
-          <ul class="article-container skills-list">
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>HTML5</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>CSS3</li>
-          </ul>
-        </div>
-
-        <div class="details-container card-gradient">
-          <h2 class="experience-sub-title">Framework & Libraries</h2>
-            <ul class="article-container skills-list">
-              <li><img src="./assets/checkmark.png" alt="" class="icon"/>React.js</li>
-              <li><img src="./assets/checkmark.png" alt="" class="icon"/>Java Swing</li>
-              <li><img src="./assets/checkmark.png" alt="" class="icon"/>NumPy</li>
-              <li><img src="./assets/checkmark.png" alt="" class="icon"/>Pandas</li>
-              <li><img src="./assets/checkmark.png" alt="" class="icon"/>Matplotlib</li>
-            </ul>
-        </div>
-
-        <div class="details-container card-gradient">
-          <h2 class="experience-sub-title">Databases</h2>
-          <ul class="article-container skills-list">
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>SQLite</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>MongoDB</li>
-          </ul>
-        </div>
-
-        <div class="details-container card-gradient">
-          <h2 class="experience-sub-title">Developer Tools</h2>
-          <ul class="article-container skills-list">
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>Git</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>GitHub</li>
-            <li><img src="./assets/checkmark.png" alt="" class="icon"/>AWS</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title section-title-accent">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container project-card card-gradient">
-          <div class="article-container project-media">
-            <img src="./assets/YockyChoccy.gif" alt="Yocky Choccy gameplay" class="project-img"/>
-          </div>
-            <h2 class="experience-sub-title project-title">Yocky Choccy</h2>
-          <div class="btn-container">
-            <a
-              href="https://github.com/SammamAhmed/YockyChoccy_Sammam"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-accent-outline project-btn">GitHub</a>
-          </div>
-        </div>
-
-        <div class="details-container color-container project-card card-gradient">
-          <div class="article-container project-media">
-            <img src="./assets/Space Invaders.gif" alt="Space Invaders project" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">Space Invaders</h2>
-          <div class="btn-container">
-            <a
-              href="https://github.com/SammamAhmed/Space-Invaders"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-accent-outline project-btn">GitHub</a>
-          </div>
-        </div>
-
-        <div class="details-container color-container project-card card-gradient">
-          <div class="article-container project-media">
-            <img src="./assets/KiviGame.gif" alt="KiviGame project" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">KiviGame</h2>
-          <div class="btn-container">
-            <a
-              href="https://github.com/SammamAhmed/KiviGame_Sammam"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-accent-outline project-btn">GitHub</a>
-          </div>
-        </div>
-
-        <div class="details-container color-container project-card card-gradient">
-          <div class="article-container project-media">
-            <img src="./assets/webshop.png" alt="webshop project" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">Webshop</h2>
-          <div class="btn-container">
-            <a
-              href="https://github.com/SammamAhmed/KiviGame_Sammam"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-accent-outline project-btn">GitHub
-            </a>
-
-            <a
-              href="https://sammamahmed.github.io/WebShop.com/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-accent-outline project-btn">Website
-            </a>
-              
-          </div>
-        </div>
-
-        <div class="details-container color-container project-card card-gradient">
-          <div class="article-container project-media">
-            <img src="./assets/portfolio.png" alt="portfolio project" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">This Website</h2>
-          <div class="btn-container">
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-accent-outline project-btn">GitHub</a>
-
-            <a
-              href="https://www.cs.mun.ca/~sammama/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-accent-outline project-btn">Website</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title section-title-accent">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/gmail.svg"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:sammama@mun.ca">sammama@mun.ca</a></p>
-        <img
-          src="./assets/linkedin.svg"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p>
-          <a
-            href="https://www.linkedin.com/in/itsammam"
-            target="_blank"
-            rel="noopener noreferrer"
-          >LinkedIn</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sammam Ahmed</div>
+      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -276,9 +21,445 @@
         </ul>
       </div>
     </nav>
-    <p>© 2025 Sammam Ahmed. All Rights Reserved.</p>
-  </footer>
 
-  <script src="script.js" defer></script>
-</body>
+    <nav id="hamburger-nav">
+      <div class="logo">Sammam Ahmed</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Sammam Ahmed profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sammam Ahmed</h1>
+        <p class="section__text__p2">Aspiring Software Developer</p>
+        <div class="btn-container">
+          <button
+            type="button"
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume_Sammam Ahmed')"
+          >
+            Download CV
+          </button>
+          <button
+            type="button"
+            class="btn btn-color-1"
+            onclick="location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title fade-in">About Me</h1>
+      <div class="section-container">
+        <br /><br />
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Experience</h3>
+              <p>Personal and<br />Academic projects</p>
+            </div>
+            <div class="details-container">
+              <h3>Education</h3>
+              <p>Bachelor of Science<br />in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm an aspiring software developer with a passion for clean UI,
+              responsive design, and flawless backend development. I love turning
+              complex problems into elegant, accessible, and user-focused web
+              experiences. Always curious, always learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>Python</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>Java</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>C</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>C++</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>JavaScript</h3>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>HTML5</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>CSS3</h3>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Framework & Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>React.js</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>Java Swing</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>NumPy</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>Pandas</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>Matplotlib</h3>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Databases</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>SQLite</h3>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>MongoDB</h3>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Developer Tools</h2>
+            <div class="article-container">
+                            <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>Git</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>GitHub</h3>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark icon"
+                  class="icon"
+                />
+                <h3>AWS</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+
+      <!-- Projrct 1 Yocky Choccy --> 
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/YockyChoccy.gif"
+                alt="Yocky Choccy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Yocky Choccy</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/SammamAhmed/YockyChoccy_Sammam"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Github</a
+              >
+            </div>
+          </div>
+      
+      
+
+          <!-- Project 2 Space Invaders --> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Space Invaders.gif"
+                alt="Space Invaders"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Space Invaders</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/SammamAhmed/Space-Invaders"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Github</a
+              >
+            </div>
+          </div>
+          <!-- Projrct 3 KiviGame --> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/KiviGame.gif"
+                alt="KiviGame"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">KiviGame</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/SammamAhmed/KiviGame_Sammam"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Github</a
+              >
+            </div>
+          </div>
+
+          <!-- Projrct 4 WebShop --> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/webshop.png"
+                alt="WebShop"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">WebShop</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/SammamAhmed/WebShop"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Github</a>
+              <a
+                href="https://sammamahmed.github.io/WebShop/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Website</a>
+            </div>
+          </div>
+
+          <!-- Projrct 5 This Website --> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/portfolio.png"
+                alt="portfolio"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">This Website</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/SammamAhmed/My-Portfolio-Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Github</a>
+              <a
+                href="https://www.cs.mun.ca/~sammama/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Website</a>
+            </div>
+          </div>
+
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project Three Screenshot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-color-2 project-btn"
+                >Github</a
+              >
+            </div>
+          </div> -->
+        
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/gmail.svg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sammama@mun.ca">sammama@mun.ca</a></p>
+          <img
+            src="./assets/linkedin.svg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/itsammam"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Sammam Ahmed</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>© 2025 Sammam Ahmed. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
